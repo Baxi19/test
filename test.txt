@@ -1,0 +1,13 @@
+let
+    var x : int;
+    var z : int
+in
+begin
+    let
+        var m : char;
+        var x: char
+    in
+        x := 3 / m * z;
+
+    z := 5 + z
+end

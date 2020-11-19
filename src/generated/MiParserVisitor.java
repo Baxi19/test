@@ -88,6 +88,20 @@ public interface MiParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVarSingleDeclarationAST(MiParser.VarSingleDeclarationASTContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code methodSingleDeclarationAST}
+	 * labeled alternative in {@link MiParser#singleDeclaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMethodSingleDeclarationAST(MiParser.MethodSingleDeclarationASTContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code methodDeclarationAST}
+	 * labeled alternative in {@link MiParser#methodDeclaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMethodDeclarationAST(MiParser.MethodDeclarationASTContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code typeDenoterAST}
 	 * labeled alternative in {@link MiParser#typeDenoter}.
 	 * @param ctx the parse tree
@@ -122,6 +136,13 @@ public interface MiParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitGroupPrimaryExpressionAST(MiParser.GroupPrimaryExpressionASTContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code callPrimaryExpressionAST}
+	 * labeled alternative in {@link MiParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCallPrimaryExpressionAST(MiParser.CallPrimaryExpressionASTContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link MiParser#operator}.
 	 * @param ctx the parse tree

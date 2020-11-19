@@ -13,6 +13,7 @@ RESTA       : '-';
 MULT        : '*';
 DIV         : '/';
 //Palabras Reservadas
+FN      : 'fn';
 IF      : 'if';
 THEN    : 'then';
 ELSE    : 'else';

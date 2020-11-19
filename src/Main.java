@@ -1,11 +1,9 @@
-import AContextual.AContextual;
+import codeGen.CodeGeneration1;
 import generated.*;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
-
-import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,8 +26,11 @@ public class Main {
             /*main.MiVisitor mv = new main.MiVisitor();
             mv.visit(tree);*/
 
-            AContextual mv = new AContextual();
-            mv.visit(tree);
+            //AContextual mv = new AContextual();
+            //mv.visit(tree);
+
+            CodeGeneration1 cd = new CodeGeneration1();
+            cd.visit(tree);
         }
         catch(Exception e){System.out.println("No hay archivo");e.printStackTrace();}
 

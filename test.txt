@@ -1,13 +1,14 @@
 let
     var x : int;
-    var z : int
+    fn factorial(): int
+        let
+            var y: int
+        in
+        begin
+            x := 10;
+            y := 5 + x;
+            print(y)
+        end
 in
-begin
-    let
-        var m : char;
-        var x: char
-    in
-        x := 3 / m * z;
+factorial()
 
-    z := 5 + z
-end
